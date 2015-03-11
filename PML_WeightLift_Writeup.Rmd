@@ -1,0 +1,57 @@
+---
+title: "GH-Pages Test Page"
+author: "user_id 0c78b2588b0c02a54a2c07955323b44e"
+date: '2015-03-11'
+output: html_document
+---
+
+## 1. OVERVIEW
+This is what happens with `library(help = "datasets")`
+
+```
+Package:       datasets
+Version:       3.1.3
+Priority:      base
+Title:         The R Datasets Package
+Author:        R Core Team and contributors worldwide
+Maintainer:    R Core Team <R-core@r-project.org>
+Description:   Base R datasets.
+License:       Part of R 3.1.3
+Built:         R 3.1.3; ; 2015-03-09 16:32:51 UTC; unix
+```
+
+## 2. ANOTHER OVERVIEW
+Content will be available later `?datasets`
+
+### 2.1 Some R Code Demo
+Content will be available later
+```{r TestRCode, echo=TRUE, eval=FALSE, message=FALSE}
+n <- 100
+p <- 40
+sigma <- 1
+set.seed(1)
+sim <- mlbench.friedman1(n, sd = sigma)
+colnames(sim$x) <- c(paste("real", 1:5, sep = ""), paste("bogus", 1:5, sep = ""))
+bogus <- matrix(rnorm(n * p), nrow = n)
+colnames(bogus) <- paste("bogus", 5+(1:ncol(bogus)), sep = "")
+x <- cbind(sim$x, bogus)
+y <- sim$y
+```
+
+### 2.2 There may be a plot here
+
+```{r Plot1, echo=FALSE, message=FALSE, fig.width=10, fig.height=5}
+library(ggplot2)
+
+set.seed(20150308)
+df1 <- data.frame(X=sample(1:1000, 100, replace=T), Y=sample(1:1000, 100, replace=T),
+						Code=sample(LETTERS[1:5], 100, replace=T))
+
+ggplot(df1, aes(x=X, y=Y, fill=Code)) +
+	labs(title="The Nuclear Decay Cycle", x="Orbital Period", y="Particle Energy") +
+	geom_point(shape=21, size=6, alpha=0.7)
+```
+
+## 3. CONCLUSION
+Content will be available later
+
