@@ -1,57 +1,31 @@
 ---
-title: "GH-Pages Test Page"
+title: "Practical Machine Learning - Project WriteUp"
 author: "user_id 0c78b2588b0c02a54a2c07955323b44e"
-date: '2015-03-11'
-output: html_document
+date: 'Coursera - March 2015'
+output:
+  html_document:
+    css: ../../../00_Common/CustomRmdStyle.css
 ---
 
-## 1. OVERVIEW
-This is what happens with `library(help = "datasets")`
+## REMOVAL NOTICE
 
-```
-Package:       datasets
-Version:       3.1.3
-Priority:      base
-Title:         The R Datasets Package
-Author:        R Core Team and contributors worldwide
-Maintainer:    R Core Team <R-core@r-project.org>
-Description:   Base R datasets.
-License:       Part of R 3.1.3
-Built:         R 3.1.3; ; 2015-03-09 16:32:51 UTC; unix
-```
+<div id="BoxWarning">
+The Project WriteUp page has been rolled back to hide it from public view. This is intentional to respect **Coursera Honor Code**. My original work is still available. If you are Coursera Staff and wants to review/audit my work, please contact me through my Coursera UserID above.
+</div>
+<br/>
+[Coursera Honor Code](https://www.coursera.org/about/terms/honorcode):
 
-## 2. ANOTHER OVERVIEW
-Content will be available later `?datasets`
+All students participating in the class must agree to abide by the following code of conduct:
 
-### 2.1 Some R Code Demo
-Content will be available later
-```{r TestRCode, echo=TRUE, eval=FALSE, message=FALSE}
-n <- 100
-p <- 40
-sigma <- 1
-set.seed(1)
-sim <- mlbench.friedman1(n, sd = sigma)
-colnames(sim$x) <- c(paste("real", 1:5, sep = ""), paste("bogus", 1:5, sep = ""))
-bogus <- matrix(rnorm(n * p), nrow = n)
-colnames(bogus) <- paste("bogus", 5+(1:ncol(bogus)), sep = "")
-x <- cbind(sim$x, bogus)
-y <- sim$y
-```
+- I will register for only one account.
 
-### 2.2 There may be a plot here
+- My answers to homework, quizzes, exams, projects, and other assignments will be my own work (except for assignments that explicitly permit collaboration).
 
-```{r Plot1, echo=FALSE, message=FALSE, fig.width=10, fig.height=5}
-library(ggplot2)
+- **I will not make solutions to homework, quizzes, exams, projects, and other assignments available to anyone else** (except to the extent an assignment explicitly permits sharing solutions). This includes both solutions written by me, as well as any solutions provided by the course staff or others.
 
-set.seed(20150308)
-df1 <- data.frame(X=sample(1:1000, 100, replace=T), Y=sample(1:1000, 100, replace=T),
-						Code=sample(LETTERS[1:5], 100, replace=T))
+- I will not engage in any other activities that will dishonestly improve my results or dishonestly improve or hurt the results of others.
 
-ggplot(df1, aes(x=X, y=Y, fill=Code)) +
-	labs(title="The Nuclear Decay Cycle", x="Orbital Period", y="Particle Energy") +
-	geom_point(shape=21, size=6, alpha=0.7)
-```
 
-## 3. CONCLUSION
-Content will be available later
+## THANK YOU
 
+If you are not Coursera Staff and somehow is aware of this page. I am sorry the page is no longer available. If you were one of my graders and kept a copy of my work. I would like to ask you to keep it private for yourself only. Please **DO NOT** publish it anywhere. Thank you for your help to encourage future students to work by themselves.
